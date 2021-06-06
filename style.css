@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+form {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+form input {
+    font-family: inherit;
+    font-size: inherit;
+}
