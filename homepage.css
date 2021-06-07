@@ -1,8 +1,18 @@
 /*BODY*/
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100vh;
+    min-height: 32em;
+}
+
 
 main {
     text-align: center;
     margin-bottom: 1.8em;
+    height: 100%;
+    max-height: 40em;
 }
 
 #search {
@@ -53,12 +63,16 @@ main {
 
 /*HEADER*/
 
+header {
+    align-self: flex-start;
+    margin-bottom: auto;
+    width: 100%;
+}
+
 #navbar {
     display: flex;
     justify-content: space-between;
-    margin: 0.75em 0.75em 1em 1.25em;
-    margin-left: 1.25em;
-    margin-bottom: 1em;
+    padding: 0.75em 0.75em 1em 1.25em;
 }
 
 #navbar ul {
@@ -119,6 +133,12 @@ main {
     justify-content: space-between;
     padding: 1em 1.5em 1.25em 1.75em;
     background: #f2f2f2;
+    width: calc(100%-3.25em);
+    
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    margin-top: auto;
 }
 
 #footer ul {
@@ -182,6 +202,10 @@ main {
     #footer ul {
         justify-content: center;
     }
+
+    main {
+        max-height: 37em;
+    }
 }
 
 @media screen and (max-width: 730px) {
@@ -198,5 +222,9 @@ main {
 
     #right-footer-items {
         grid-row: 3;
+    }
+
+    main {
+        max-height: 33em;
     }
 }
