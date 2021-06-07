@@ -41,6 +41,65 @@ main {
     margin-left: 0.25em;
     margin-right: 0.25em;
     background: #f8f9fa;
+    color: rgb(32, 32, 32);
+    border: none;
+    cursor: pointer;
+    border-radius: 0.25em;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0.5em;
+    margin-bottom: 1em;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+#left-nav-items li {
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+}
+
+#right-nav-items li {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+#navbar a {
+    color: black;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    text-decoration: underline;
+}
+
+#apps-button {
+    border-radius: 50%;
+    background: none;
+    border: none;
+    padding: 0.5em;
+    margin-left: 0.5em;
+    cursor: pointer;
+}
+
+#apps-button:hover {
+    background: rgba(60,64,67,0.08);
+}
+
+#sign-in-button {
+    padding: 0.5em 2em 0.75em 2em;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+    background: #1a73e8;
+    color: white;
     border: none;
     cursor: pointer;
     border-radius: 0.25em;
